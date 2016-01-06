@@ -29,7 +29,7 @@ plot(df$DateTime,df$Voltage,type='l', xlab="datetime",ylab="Voltage")
 # draw plot 4.3 (Weekday / Energy sub metering 1,2,3)
 # start with an empty plot
 plot(df$DateTime, df$Sub_metering_1, type="n",  ylab = "Energy sub metering", xlab ="")
-# on OSX topleft prodcuces a wrong result (plot4_incorrect.png)
+# on OSX topleft prodcuces a wrong result in R-Studio Viewer, but PNG is correct
 legend("topright", pch="_", col = c("black", "red", "blue"), legend = c("Sub_metering 1", "Sub_metering 2", "Sub_metering 3"), bty="n")
 
 # add the 3 plot lines
